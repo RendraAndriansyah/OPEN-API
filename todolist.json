@@ -1,3 +1,20 @@
 {
-    
+    "openapi" : "3.0.3",
+    "info": { 
+        "title": "Todolist RESTFull API ",
+        "version": "1",
+        "description": "Open API for Todolist RESTFull API",
+        "termsOfService": "https://www.openapi.io",
+        "contact": {
+            "name": "M Rendra Andriansyah",
+            "email": "rendra3211@gmail.com",
+            "url": "https://www.rendradev.com"
+        },
+        "license": {
+            "name": "APACHE 2.0",
+            "url": "https://www.apache.org/license/LICENCE-2.0"
+        }
+    },
+    "servers": [],
+    "paths": {}
 }
