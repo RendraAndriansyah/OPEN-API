@@ -33,5 +33,23 @@
         "description": "Github Profile",
         "url": "https://www.github.com/RendraAndriansyah"
     },
-    "paths": {}
+    "paths": {
+        "/todolist":{
+            "get" : {
+
+            },
+
+            "post":{
+
+            }
+        },
+        "/todolist/{todolistId}" : {
+            "put" : {
+
+            },
+            "delete": {
+
+            }
+        }
+    }
 }
