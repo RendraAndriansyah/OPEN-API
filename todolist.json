@@ -36,19 +36,37 @@
     "paths": {
         "/todolist":{
             "get" : {
+                "summary": "Get all todolist",
+                "description": "Get all todolist by default",
+                "responses": {
 
+                }
             },
 
             "post":{
+                "summary": "Create new todolist",
+                "description": "Create new todolist to database",
+                "responses": {
+
+                }
 
             }
         },
         "/todolist/{todolistId}" : {
             "put" : {
+                "summary": "update existing todolist",
+                "description": "Update existing todolist in database",
+                "responses": {
+
+                }
 
             },
             "delete": {
+                "summary": "delete existing todolist",
+                "description": "delete existing todolist in database",
+                "responses": {
 
+                }
             }
         }
     }
