@@ -61,6 +61,16 @@
               "nullable": true,
               "minLength": 1,
               "maxLength": 100
+            },
+            "examples": {
+              "Javascript": {
+                "description": "value of javascript",
+                "value": "javascipt"
+              },
+              "Typescript": {
+                "description": "value of Typescript",
+                "value": "Typescript"
+              }
             }
           }
         ],
