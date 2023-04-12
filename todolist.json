@@ -108,6 +108,24 @@
                     }
                   }
                 }
+              },
+              "examples": {
+                "Javascript": {
+                  "description": "Example create todolist javascipt",
+                  "value": {
+                    "name": "javascipt",
+                    "priority": 3,
+                    "tags": ["ReactJS", "NextJS", "VueJS"]
+                  }
+                },
+                "Typescript": {
+                  "description": "Example create todolist Typescript",
+                  "value": {
+                    "name": "Typescript",
+                    "priority": 3,
+                    "tags": ["SvelteJS", "ExpressJS", "GatsbyJS"]
+                  }
+                }
               }
             }
           }
@@ -129,6 +147,16 @@
               "type": "string",
               "minLength": 1,
               "maxLength": 100
+            },
+            "examples": {
+              "Javascript": {
+                "description": "Sample todolist id for Javascript",
+                "value": 1
+              },
+              "Typescript": {
+                "description": "Sample todolist id for Typescript",
+                "value": 3
+              }
             }
           }
         ],
@@ -157,6 +185,24 @@
                       "type": "string",
                       "minLength": 1
                     }
+                  }
+                }
+              },
+              "examples": {
+                "Javascript": {
+                  "description": "Example updated todolist javascipt",
+                  "value": {
+                    "name": "javascipt",
+                    "priority": 6,
+                    "tags": ["ReactJS", "NextJS", "VueJS"]
+                  }
+                },
+                "Typescript": {
+                  "description": "Example updated todolist Typescript",
+                  "value": {
+                    "name": "Typescript",
+                    "priority": 6,
+                    "tags": ["SvelteJS", "ExpressJS", "GatsbyJS"]
                   }
                 }
               }
