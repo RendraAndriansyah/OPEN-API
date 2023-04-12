@@ -244,29 +244,7 @@
 
         "summary": "Update existing todolist",
         "description": "Update existing todolist in database",
-        "parameters": [
-          {
-            "name": "todolist",
-            "description": "todolist Id for updated",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "string",
-              "minLength": 1,
-              "maxLength": 100
-            },
-            "examples": {
-              "Javascript": {
-                "description": "Sample todolist id for Javascript",
-                "value": 1
-              },
-              "Typescript": {
-                "description": "Sample todolist id for Typescript",
-                "value": 3
-              }
-            }
-          }
-        ],
+        "parameters": [{ "$ref": "#/components/parameters/todolistId" }],
         "requestBody": {
           "content": {
             "application/json": {
@@ -375,19 +353,7 @@
 
         "summary": "Delete existing todolist",
         "description": "Delete existing todolist in database",
-        "parameters": [
-          {
-            "name": "todolistId",
-            "description": "todolist Id for deleted",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "string",
-              "minLength": 1,
-              "maxLength": 100
-            }
-          }
-        ],
+        "parameters": [{ "$ref": "#/components/parameters/todolistId" }],
         "responses": {
           "200": {
             "description": "Success delete data id todolist",
@@ -507,29 +473,25 @@
     },
     "parameters": {
       "todolistId": {
-        "parameters": [
-          {
-            "name": "todolist",
-            "description": "todolist Id for updated",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "string",
-              "minLength": 1,
-              "maxLength": 100
-            },
-            "examples": {
-              "Javascript": {
-                "description": "Sample todolist id for Javascript",
-                "value": 1
-              },
-              "Typescript": {
-                "description": "Sample todolist id for Typescript",
-                "value": 3
-              }
-            }
+        "name": "todolist",
+        "description": "todolist Id for updated",
+        "in": "path",
+        "required": true,
+        "schema": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 100
+        },
+        "examples": {
+          "Javascript": {
+            "description": "Sample todolist id for Javascript",
+            "value": 1
+          },
+          "Typescript": {
+            "description": "Sample todolist id for Typescript",
+            "value": 3
           }
-        ]
+        }
       }
     }
   }
